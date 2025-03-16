@@ -14,12 +14,11 @@ A lightweight, multithreaded task scheduler for real-time applications, implemen
 - **C++17** or later
 - **CMake** (>= 3.10)
 - **Make**
-- **Jenkins (optional, for CI/CD)**
 
 ### Installation
 ```sh
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/Mini-RTOS.git
+git clone https://github.com/prakyaths/Mini-RTOS.git
 cd Mini-RTOS
 
 # Create build directory
@@ -28,3 +27,33 @@ mkdir build && cd build
 # Run CMake & Build
 cmake ..
 make -j$(nproc)
+```
+
+### Running the RTOS Demo
+```sh
+./mini_rtos
+```
+
+## Project Structure
+```
+Mini-RTOS/
+│── src/                  # Core Source Files  
+│   ├── scheduler.cpp      
+│   ├── task.cpp           
+│   ├── main.cpp           
+│── include/              # Header Files  
+│   ├── scheduler.h        
+│   ├── task.h             
+│── tests/                # Unit Tests  
+│── docs/                 # Design Docs  
+│── README.md             # Project Overview  
+│── CMakeLists.txt        # Build System  
+```
+
+## License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+## Contact
+For any questions, feel free to reach out:
+- GitHub Issues: [Open an Issue](https://github.com/prakyaths/Mini-RTOS/issues)
+- Email: prakyathshetty00@gmail.com
